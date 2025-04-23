@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammed Fahad P S - Electrical Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#FF6B00", secondary: "#1A1A1A" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #000000;
+      color: #ffffff;
+      }
+      h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+      }
+      .typewriter {
+      overflow: hidden;
+      border-right: 2px solid #FF6B00;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+      }
+      @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+      }
+      @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #FF6B00 }
+      }
+      .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #FF6B00;
+      left: -8px;
+      top: 0;
+      }
+      .timeline-item {
+      position: relative;
+      padding-left: 30px;
+      margin-left: 20px;
+      border-left: 2px solid rgba(255, 107, 0, 0.3);
+      padding-bottom: 40px;
+      }
+      .timeline-item:last-child {
+      border-left: 2px solid transparent;
+      }
+      input:focus, textarea:focus {
+      outline: none;
+      border-color: #FF6B00;
+      }
+      .progress-bar {
+      height: 6px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      overflow: hidden;
+      }
+      .progress-fill {
+      height: 100%;
+      background-color: #FF6B00;
+      border-radius: 3px;
+      transition: width 1s ease-in-out;
+      }
+      .nav-link {
+      position: relative;
+      }
+      .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #FF6B00;
+      transition: width 0.3s ease;
+      }
+      .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+      }
+      .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 25px -5px rgba(255, 107, 0, 0.1), 0 10px 10px -5px rgba(255, 107, 0, 0.04);
+      }
+      .achievement-card:hover {
+      transform: scale(1.03);
+      }
+      .custom-checkbox {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #FF6B00;
+      border-radius: 4px;
+      background-color: transparent;
+      position: relative;
+      cursor: pointer;
+      }
+      .custom-checkbox:checked::before {
+      content: '✓';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FF6B00;
+      font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full bg-black bg-opacity-90 backdrop-blur-sm z-50 border-b border-gray-800"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#home" class="text-2xl font-bold text-white">
+          <span class="text-primary">Muhammed </span>Fahad
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="#home"
+            class="nav-link text-white hover:text-primary transition-colors"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="nav-link text-white hover:text-primary transition-colors"
+            >About</a
+          >
+          <a
+            href="#resume"
+            class="nav-link text-white hover:text-primary transition-colors"
+            >Resume</a
+          >
+          <a
+            href="#projects"
+            class="nav-link text-white hover:text-primary transition-colors"
+            >Projects</a
+          >
+          <a
+            href="#achievements"
+            class="nav-link text-white hover:text-primary transition-colors"
+            >Achievements</a
+          >
+          <a
+            href="#contact"
+            class="nav-link text-white hover:text-primary transition-colors"
+            >Contact</a
+          >
+          <span class="text-white font-medium">Muhammed Fahad</span>
+        </div>
+        <div
+          class="md:hidden w-8 h-8 flex items-center justify-center cursor-pointer"
+          id="mobile-menu-button"
+        >
+          <i class="ri-menu-line text-white ri-2x"></i>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-black bg-opacity-95 w-full"
+      >
+        <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+          <a
+            href="#home"
+            class="text-white hover:text-primary transition-colors py-2"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-white hover:text-primary transition-colors py-2"
+            >About</a
+          >
+          <a
+            href="#resume"
+            class="text-white hover:text-primary transition-colors py-2"
+            >Resume</a
+          >
+          <a
+            href="#projects"
+            class="text-white hover:text-primary transition-colors py-2"
+            >Projects</a
+          >
+          <a
+            href="#achievements"
+            class="text-white hover:text-primary transition-colors py-2"
+            >Achievements</a
+          >
+          <a
+            href="#contact"
+            class="text-white hover:text-primary transition-colors py-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 pb-10">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-3/5 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+              <span class="text-white">Hi, I'm </span>
+              <span class="text-primary">Muhammed Fahad P S</span>
+            </h1>
+            <div class="h-20 overflow-hidden mb-6">
+              <p class="typewriter text-xl md:text-2xl text-gray-300">
+                Electrical and Electronics Engineer<br />
+                Oil and Gas Engineer || ASNT Level II Certified
+              </p>
+            </div>
+            <p class="text-gray-400 mb-8 text-lg leading-relaxed">
+              A passionate engineer with expertise in electrical systems,
+              currently serving as Operations Manager at Future Services manpower office for domestic recruitment,
+              Kuwait. I combine technical knowledge with managerial skills to
+              drive operational excellence in industrial operations.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#resume"
+                class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"
+              >
+                View Resume
+              </a>
+              <a
+                href="#contact"
+                class="border-2 border-primary text-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:bg-opacity-10 transition-all whitespace-nowrap"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+          <div class="md:w-2/5 flex justify-center">
+            <div
+              class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary"
+            >
+              <img
+                src="https://static.readdy.ai/image/ffaca0efe7f43c92227fbeebe75f9bfc/0cb88142136b80cc6cf7ef2bfaae2d01.jpeg"
+                alt="Muhammed Fahad P S"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <div class="mb-16 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            About <span class="text-primary">Me</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold mb-6 text-primary">
+              Professional Objective
+            </h3>
+            <p class="text-gray-300 mb-8 leading-relaxed">
+              I aim to leverage my technical knowledge and leadership skills to
+              excel in operational management roles, driving efficiency and
+              innovation in industrial settings.
+            </p>
+            <h3 class="text-2xl font-semibold mb-6 text-primary">
+              Career Focus
+            </h3>
+            <p class="text-gray-300 leading-relaxed">
+              My career is centered on the intersection of electrical
+              engineering and petroleum operations, with a particular emphasis
+              on operational management. I strive to combine technical precision
+              with strategic oversight to optimize processes, ensure safety
+              compliance, and foster team development in challenging industrial
+              environments.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold mb-6 text-primary">
+              Core Competencies
+            </h3>
+            <div class="space-y-6">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-white">Electrical Systems</span>
+                  <span class="text-primary">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-white">QA/QC</span>
+                  <span class="text-primary">75%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-white">Non-Destructive Testing</span>
+                  <span class="text-primary">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-white">Project Management</span>
+                  <span class="text-primary">80%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-white">Team Leadership</span>
+                  <span class="text-primary">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-white">AutoCAD Electrical</span>
+                  <span class="text-primary">75%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-white">Industrial Safety</span>
+                  <span class="text-primary">90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Section -->
+    <section id="resume" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="mb-16 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            My <span class="text-primary">Resume</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="md:w-1/2">
+            <h3
+              class="text-2xl font-semibold mb-8 text-primary flex items-center"
+            >
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+              >
+                <i class="ri-briefcase-line text-primary"></i>
+              </div>
+              Work Experience
+            </h3>
+            <div class="timeline-item">
+              <h4 class="text-xl font-medium mb-1">Operations Manager</h4>
+              <p class="text-primary mb-2">Future Services, Kuwait</p>
+              <p class="text-gray-400 mb-4">2024 - Present</p>
+              <ul class="text-gray-300 space-y-2">
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span
+                    >Managing end-to-end recruitment operations including
+                    sourcing, selection, visa processing, and deployment</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span
+                    >Coordinating with Kuwait-based clients to understand
+                    manpower needs and ensure timely mobilization</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span
+                    >Leading and supervising recruitment teams across multiple
+                    countries for efficient candidate onboarding</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span
+                    >Overseeing documentation, emigration clearance, medicals,
+                    and travel arrangements</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span
+                    >Supervising office staff to ensure efficient daily
+                    operations and effective team performance</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span
+                    >Handling technical responsibilities related to operational
+                    processes and implementing new system solutions</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span
+                    >Developing and conducting comprehensive staff training
+                    programs to enhance operational efficiency</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <h3
+              class="text-2xl font-semibold mb-8 text-primary flex items-center"
+            >
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+              >
+                <i class="ri-book-open-line text-primary"></i>
+              </div>
+              Education
+            </h3>
+            <div class="timeline-item">
+              <h4 class="text-xl font-medium mb-1">
+                Advanced Diploma in Petroleum Operation and Quality Management
+              </h4>
+              <p class="text-primary mb-2">Axionz Global Pvt Ltd, Cochin</p>
+              <p class="text-gray-400 mb-4">2025</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="text-xl font-medium mb-1">
+                B.Tech in Electrical and Electronics Engineering
+              </h4>
+              <p class="text-primary mb-2">
+                Adi Shankara Institute of Engineering and Technology
+              </p>
+              <p class="text-gray-400 mb-4">2020 - 2024</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="text-xl font-medium mb-1">Higher Secondary</h4>
+              <p class="text-primary mb-2">
+                Kasturba English Medium, Manjummel (CBSE)
+              </p>
+              <p class="text-gray-400 mb-4">2020</p>
+                         </div>
+          </div>
+        </div>
+        <div class="mt-16">
+          <h3
+            class="text-2xl font-semibold mb-8 text-primary flex items-center"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+            >
+              <i class="ri-briefcase-line text-primary"></i>
+            </div>
+            Internships
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
+          >
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-flashlight-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">KSEBL Electrical Section</h4>
+              <p class="text-gray-400 mb-2">Aluva Town</p>
+              <p class="text-gray-500 text-sm">
+                Comprehensive training in electrical distribution systems and
+                maintenance operations
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-cloud-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">IoT Internship</h4>
+              <p class="text-gray-400 mb-2">Nest Digital, Aluva</p>
+              <p class="text-gray-500 text-sm">
+                Hands-on experience with IoT technologies and smart device
+                development
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-cpu-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">Product Development</h4>
+              <p class="text-gray-400 mb-2">Laxmi Infotech, Edappally</p>
+              <p class="text-gray-500 text-sm">
+                Embedded technology product development and implementation
+              </p>
+            </div>
+          </div>
+          <h3
+            class="text-2xl font-semibold mb-8 text-primary flex items-center"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+            >
+              <i class="ri-award-line text-primary"></i>
+            </div>
+            Workshops
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
+          >
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-flashlight-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">Energy Auditing</h4>
+
+              <p class="text-gray-500 text-sm">
+                Comprehensive training in electrical distribution systems and
+                maintenance operations
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-cloud-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">AutoCAD Electrical</h4>
+
+              <p class="text-gray-500 text-sm">
+                Hands-on experience with IoT technologies and smart device
+                development
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-cpu-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">Python IoT Technologies</h4>
+              <p class="text-gray-400 mb-2">Laxmi Infotech, Edappally</p>
+              <p class="text-gray-500 text-sm">
+                Embedded technology product development and implementation
+              </p>
+            </div>
+          </div>
+          <h3
+            class="text-2xl font-semibold mb-8 text-primary flex items-center"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+            >
+              <i class="ri-award-line text-primary"></i>
+            </div>
+            Certifications & Trainings
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-award-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">SDC Canada International</h4>
+              <p class="text-gray-400">Professional Certification</p>
+              <p class="text-gray-500 text-sm mt-2">
+                13th International Certification Program
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-certified-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">ASNT Level II Certified</h4>
+              <p class="text-gray-400">American Society for NDT</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Visual and Magnetic Particle Testing
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-shield-check-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">Industrial Safety</h4>
+              <p class="text-gray-400">Professional Certification</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Workplace Safety and Risk Management
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-oil-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">Pipeline Engineering</h4>
+              <p class="text-gray-400">Professional Certification</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Pipeline Design and Maintenance
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-file-list-3-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">APT Session</h4>
+              <p class="text-gray-400">Professional Training</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Advanced Process Technology
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-ruler-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">AutoCAD Electrical</h4>
+              <p class="text-gray-400">Autodesk Certified</p>
+              <p class="text-gray-500 text-sm mt-2">Electrical System Design</p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-bar-chart-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">Data Analytics</h4>
+              <p class="text-gray-400">Professional Training</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Getting Started with Data Analytics
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-file-excel-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">MS Excel</h4>
+              <p class="text-gray-400">Professional Training</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Advanced Excel Applications
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-shield-check-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">
+                Industrial Safety Professional
+              </h4>
+              <p class="text-gray-400">International Safety Council</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Advanced certification in workplace safety and risk management
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-oil-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">
+                Pipeline Engineering Specialist
+              </h4>
+              <p class="text-gray-400">
+                American Society of Mechanical Engineers (ASME)
+              </p>
+              <p class="text-gray-500 text-sm mt-2">
+                Specialized in pipeline design and maintenance
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-ruler-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">
+                AutoCAD Electrical Professional
+              </h4>
+              <p class="text-gray-400">Autodesk Certified Professional</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Expert in electrical system design and documentation
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-settings-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">
+                Advanced Electrical Maintenance
+              </h4>
+              <p class="text-gray-400">Technical Training Institute</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Comprehensive training in industrial electrical systems
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg hover:shadow-lg transition-all"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-4"
+              >
+                <i class="ri-team-line text-primary ri-lg"></i>
+              </div>
+              <h4 class="text-lg font-medium mb-2">
+                Project Leadership & Management
+              </h4>
+              <p class="text-gray-400">Kuwait Management Association</p>
+              <p class="text-gray-500 text-sm mt-2">
+                Advanced training in project management and team leadership
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 text-center">
+          <a
+            href="https://drive.google.com/file/d/1gSkPgiJRA-yJ8AnfoJDSNPdAaDiy1ft9/view"
+            id="download-cv-btn"
+            class="inline-flex items-center bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"
+          >
+            <i class="ri-download-line mr-2"></i>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <div class="mb-16 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            My <span class="text-primary">Projects</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-black rounded-lg overflow-hidden shadow-lg project-card transition-all duration-300"
+          >
+            <div class="h-48 bg-gray-800 flex items-center justify-center">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-20 rounded-full"
+              >
+                <i class="ri-book-open-line text-primary ri-2x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                LAARC – Library Revitalization
+              </h3>
+              <p class="text-gray-400 mb-4">IEEE Initiative</p>
+              <p class="text-gray-300 mb-4">
+                Led a team to revitalize local libraries with modern technology
+                integration, creating digital catalogs and improving
+                accessibility for underprivileged communities.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >Community Service</span
+                >
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >Digital Transformation</span
+                >
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >IEEE</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-800 text-white py-2 !rounded-button hover:bg-gray-700 transition-colors whitespace-nowrap"
+              ><a href="https://www.linkedin.com/posts/muhammed-fahad-p-s_the-library-advancement-and-revitalization-activity-7316841269727481859-g6oa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIHnnMBJ8H07JklIFBLj-z2T--_CE5kJ0Q ">
+                View Details
+                </a>
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-black rounded-lg overflow-hidden shadow-lg project-card transition-all duration-300"
+          >
+            <div class="h-48 bg-gray-800 flex items-center justify-center">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-20 rounded-full"
+              >
+                <i class="ri-flashlight-line text-primary ri-2x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Vidyut – Free Electrification
+              </h3>
+              <p class="text-gray-400 mb-4">Humanitarian Project</p>
+              <p class="text-gray-300 mb-4">
+                Designed and implemented sustainable electrical solutions for
+                underprivileged communities, providing free electrical
+                installations and safety training.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >Humanitarian</span
+                >
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >Electrical Engineering</span
+                >
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >Sustainability</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-800 text-white py-2 !rounded-button hover:bg-gray-700 transition-colors whitespace-nowrap"
+              >
+              <a href="https://drive.google.com/file/d/1FJTMw2JzgZI5ItzrB-W4bIIu07Wq4Qq7/view?usp=sharing">
+                View Details
+                </a>
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-black rounded-lg overflow-hidden shadow-lg project-card transition-all duration-300"
+          >
+            <div class="h-48 bg-gray-800 flex items-center justify-center">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-20 rounded-full"
+              >
+                <i class="ri-heart-pulse-line text-primary ri-2x"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                AI & IoT Healthcare Assistant
+              </h3>
+              <p class="text-gray-400 mb-4">IEEE IAS CMD Award Winner</p>
+              <p class="text-gray-300 mb-4">
+                Developed an innovative healthcare monitoring system using AI
+                and IoT technologies to provide remote assistance for elderly
+                and disabled individuals.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >AI</span
+                >
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >IoT</span
+                >
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >Healthcare</span
+                >
+                <span
+                  class="bg-gray-800 text-primary text-xs px-3 py-1 rounded-full"
+                  >Award-Winning</span
+                >
+              </div>
+              <button
+                class="w-full bg-gray-800 text-white py-2 !rounded-button hover:bg-gray-700 transition-colors whitespace-nowrap"
+              >
+              <a href="https://drive.google.com/file/d/1VyoHsvgYq2Ra_IgDKr2TensWCV5Ggku7/view?usp=sharing">
+                View Details
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="mb-16 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            My <span class="text-primary">Achievements</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="bg-gray-900 p-6 rounded-lg achievement-card transition-all duration-300"
+          >
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 mt-1 flex-shrink-0"
+              >
+                <i class="ri-trophy-line text-primary"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">
+                  IEEE IAS CMD Humanitarian Contest
+                </h3>
+                <p class="text-primary mb-1">2nd Prize (International)</p>
+                <p class="text-gray-400 mb-3">2023</p>
+                <p class="text-gray-300">
+                  Recognized for developing an innovative AI & IoT-based
+                  Healthcare Assistant that provides remote monitoring and
+                  assistance for elderly and disabled individuals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 p-6 rounded-lg achievement-card transition-all duration-300"
+          >
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 mt-1 flex-shrink-0"
+              >
+                <i class="ri-user-star-line text-primary"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Chairperson</h3>
+                <p class="text-primary mb-1">IEEE PES SBC ASIET</p>
+                <p class="text-gray-400 mb-3">2022 - 2023</p>
+                <p class="text-gray-300">
+                  Led the IEEE Power & Energy Society Student Branch Chapter,
+                  organizing technical workshops, industry visits, and community
+                  service initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 p-6 rounded-lg achievement-card transition-all duration-300"
+          >
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 mt-1 flex-shrink-0"
+              >
+                <i class="ri-code-box-line text-primary"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Tech Coordinator</h3>
+                <p class="text-primary mb-1">Algo Clan Coding Club</p>
+                <p class="text-gray-400 mb-3">2021 - 2022</p>
+                <p class="text-gray-300">
+                  Coordinated technical activities and coding competitions,
+                  mentored junior members, and developed programming curriculum
+                  for the club.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-900 p-6 rounded-lg achievement-card transition-all duration-300"
+          >
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 mt-1 flex-shrink-0"
+              >
+                <i class="ri-award-line text-primary"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">
+                  Outstanding Student Award
+                </h3>
+                <p class="text-primary mb-1">
+                  Department of Electrical Engineering
+                </p>
+                <p class="text-gray-400 mb-3">2023</p>
+                <p class="text-gray-300">
+                  Recognized for academic excellence, leadership qualities, and
+                  contributions to departmental activities and projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <div class="mb-16 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Get In <span class="text-primary">Touch</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold mb-6 text-white">
+              Contact Information
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 flex-shrink-0"
+                >
+                  <i class="ri-mail-line text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium mb-1 text-white">Email</h4>
+                  <a
+                    href="muhammedfahad1.567@gmail.com"
+                    class="text-gray-300 hover:text-primary transition-colors"
+                    >muhammedfahad1.567@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 flex-shrink-0"
+                >
+                  <i class="ri-map-pin-line text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium mb-1 text-white">Location</h4>
+                  <p class="text-gray-300">Hawally, Kuwait</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 flex-shrink-0"
+                >
+                  <i class="ri-linkedin-box-line text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium mb-1 text-white">LinkedIn</h4>
+                  <a
+                    href="https://linkedin.com/in/muhammed-fahad-p-s"
+                    class="text-gray-300 hover:text-primary transition-colors"
+                    >linkedin.com/in/muhammed-fahad-p-s</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mt-10">
+              <h4 class="text-lg font-medium mb-4 text-white">
+                Connect With Me
+              </h4>
+              <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/muhammed-fahad-p-s" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full hover:bg-primary hover:bg-opacity-30 transition-colors">
+<i class="ri-linkedin-fill text-primary"></i>
+</a>
+
+<a href="https://github.com/y0uridi0t10" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full hover:bg-primary hover:bg-opacity-30 transition-colors">
+<i class="ri-github-fill text-primary"></i>
+</a>
+
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full hover:bg-primary hover:bg-opacity-30 transition-colors">
+<i class="ri-twitter-fill text-primary"></i>
+</a>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold mb-6 text-white">
+              Send Me a Message
+            </h3>
+            <form class="space-y-6">
+              <div>
+                <label for="name" class="block text-gray-300 mb-2">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full bg-black border border-gray-700 text-white px-4 py-3 rounded focus:border-primary"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-gray-300 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full bg-black border border-gray-700 text-white px-4 py-3 rounded focus:border-primary"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div>
+                <label for="subject" class="block text-gray-300 mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="w-full bg-black border border-gray-700 text-white px-4 py-3 rounded focus:border-primary"
+                  placeholder="Subject"
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-gray-300 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full bg-black border border-gray-700 text-white px-4 py-3 rounded focus:border-primary"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="consent" class="custom-checkbox" />
+                <label for="consent" class="text-gray-300 ml-3 text-sm"
+                  >I agree to the processing of personal data</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-10 bg-black border-t border-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="#home" class="text-2xl font-bold text-white">
+              <span class="text-primary">M</span>Fahad
+            </a>
+            <p class="text-gray-400 mt-2">Electrical Engineer</p>
+          </div>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="#home"
+              class="text-gray-400 hover:text-primary transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-400 hover:text-primary transition-colors"
+              >About</a
+            >
+            <a
+              href="#resume"
+              class="text-gray-400 hover:text-primary transition-colors"
+              >Resume</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-400 hover:text-primary transition-colors"
+              >Projects</a
+            >
+            <a
+              href="#achievements"
+              class="text-gray-400 hover:text-primary transition-colors"
+              >Achievements</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-400 hover:text-primary transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 mb-4 md:mb-0">
+            © 2025 Muhammed Fahad P S. All rights reserved.
+          </p>
+          <a
+            href="#home"
+            class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+          >
+            <i class="ri-arrow-up-line text-white"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+          });
+        });
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        // CV Download Link
+        const downloadBtn = document.getElementById("download-cv-btn");
+        downloadBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.open(
+            "https://drive.google.com/file/d/1gSkPgiJRA-yJ8AnfoJDSNPdAaDiy1ft9/view?usp=sharing",
+            "_blank",
+          );
+        });
+        // Active nav link highlighting
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+        window.addEventListener("scroll", function () {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+              current = section.getAttribute("id");
+            }
+          });
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+              link.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
